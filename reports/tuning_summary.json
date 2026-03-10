@@ -1,0 +1,42 @@
+{
+  "random_state": 42,
+  "tuning_cv_splits": 3,
+  "models": {
+    "RandomForestRegressor": {
+      "search_type": "RandomizedSearchCV",
+      "best_cv_rmse": 0.5197590239439825,
+      "best_cv_rmse_std": 0.006021110850481014,
+      "best_params": {
+        "model__n_estimators": 500,
+        "model__min_samples_split": 10,
+        "model__min_samples_leaf": 4,
+        "model__max_features": 1.0,
+        "model__max_depth": 30,
+        "feature_engineering__add_stage4_features": true
+      }
+    },
+    "GradientBoostingRegressor": {
+      "search_type": "RandomizedSearchCV",
+      "best_cv_rmse": 0.4924448821694704,
+      "best_cv_rmse_std": 0.004717660550431089,
+      "best_params": {
+        "model__subsample": 0.85,
+        "model__n_estimators": 350,
+        "model__min_samples_split": 2,
+        "model__min_samples_leaf": 4,
+        "model__max_depth": 4,
+        "model__learning_rate": 0.05,
+        "feature_engineering__add_stage4_features": false
+      }
+    },
+    "Ridge": {
+      "search_type": "GridSearchCV",
+      "best_cv_rmse": 0.6603682449971591,
+      "best_cv_rmse_std": 0.00517410724567,
+      "best_params": {
+        "feature_engineering__add_stage4_features": true,
+        "model__alpha": 100.0
+      }
+    }
+  }
+}
