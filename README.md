@@ -1,13 +1,11 @@
 # Housing Price Prediction
 
-## Current Status (Short)
-- End-to-end project is complete through final hold-out evaluation.
-- Final frozen model: `GradientBoostingRegressor_tuned`.
+End-to-end project is complete through final hold-out evaluation. Final frozen model: `GradientBoostingRegressor_tuned`.
 - Final test metrics:
   - `RMSE_test = 0.4845`
   - `MAE_test = 0.3280`
   - `R2_test = 0.8209`
-- Validation-to-test gap is small, indicating stable generalization.
+Validation-to-test gap is small, indicating stable generalization.
 
 ## Core Artifacts
 - Final model: `models/final_gradient_boosting_pipeline.joblib`
